@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Храпко Василь, КПІ, ФІОТ, frontend, ЛР2, html, css, tables"
+    />
+    <meta
+      name="description"
+      content="Виконання 🗲Лабораторної роботи №2🗲 з курсу «Oснови FE технологій» за темою 'Мова гіпертекстової розмітки сайту HTML-5. Таблиці.
+      Каскадна таблиця стилів CSS-3' студентом Храпко Василем, група ІП-04."
+    />
+    <title>Храпко В.А.👦, Група ІП-04, ЛР2, Варіант 61</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+
+    <style>
+      table {
+        table-layout: fixed;
+        width: 100%;
+      }
+
+      table,
+      td {
+        border-collapse: collapse;
+        border: 0.125em solid black;
+      }
+
+      td {
+        text-align: center;
+        height: 30px;
+      }
+
+      td:nth-child(1) {
+        width: 50%;
+      }
+
+      td:nth-child(2) {
+        width: 25%;
+      }
+
+      td:nth-child(3) {
+        width: 12.5%;
+      }
+
+      tr:nth-child(1) {
+        background-color: #618f8f;
+        color: #fff;
+      }
+
+      tr:nth-child(1):hover {
+        background-color: #9e7070;
+        color: #fff;
+      }
+
+      tr:nth-child(2) {
+        background-color: #f5f561;
+        color: #000;
+      }
+
+      tr:nth-child(2):hover {
+        background-color: #0a0a9e;
+        color: #fff;
+      }
+
+      tr:nth-child(1),
+      tr:nth-child(2) {
+        transition: background-color 0.8s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p><b>Завдання 1:</b></p>
+      <table>
+        <tr>
+          <td colspan="2" rowspan="2">Храпко</td>
+          <td>Василь</td>
+          <td rowspan="2">Андрійович</td>
+          <td rowspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>ІП-04 ЛР-2 Варіант-61</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td rowspan="2">&nbsp;</td>
+          <td rowspan="2">&nbsp;</td>
+          <td colspan="2" rowspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <p><b>Завдання 2:</b></p>
+      <div class="outer">
+        <p>Position:</p>
+        <div class="rectangle rectangle-position">
+          <div class="circle circle-red"></div>
+          <div class="circle circle-yellow"></div>
+          <div class="circle circle-green"></div>
+        </div>
+      </div>
+      <div class="outer">
+        <p>Transform:</p>
+        <div class="rectangle rectangle-transform">
+          <div class="circle circle-red"></div>
+          <div class="circle circle-yellow"></div>
+          <div class="circle circle-green"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
