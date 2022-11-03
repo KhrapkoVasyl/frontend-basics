@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Храпко Василь, КПІ, ФІОТ, frontend, ЛР5, html, css, js, events, regex"
+    />
+    <meta
+      name="description"
+      content="Виконання 🗲Лабораторної роботи №5🗲 з курсу «Oснови FE технологій» за темою 'JavaScript. «Події. Регулярні вирази»' студентом Храпко Василем, група ІП-04."
+    />
+    <title>Храпко В.А.👦, Група ІП-04, ЛР5, Варіант 61</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <script defer src="./scripts/form.js"></script>
+    <script defer src="./scripts/table.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="form-container">
+        <form class="form">
+          <p class="form-title">Форма для заповнення:</p>
+          <div class="input-container">
+            <label for="fullName">ПІБ:</label>
+            <input
+              placeholder="ПІБ"
+              type="text"
+              name="fullName"
+              id="fullName"
+            />
+          </div>
+          <div class="input-container">
+            <label for="variant">Варіант:</label>
+            <input
+              placeholder="Варіант"
+              type="tel"
+              name="variant"
+              id="variant"
+            />
+          </div>
+          <div class="input-container">
+            <label for="group">Група:</label>
+            <input placeholder="Група" type="text" name="group" id="group" />
+          </div>
+          <div class="input-container">
+            <label for="phone">Телефон:</label>
+            <input placeholder="Телефон" type="text" name="phone" id="phone" />
+          </div>
+          <div class="input-container">
+            <label for="ID_сard">ID-card:</label>
+            <input
+              placeholder="ID-card"
+              type="text"
+              name="ID_сard"
+              id="ID_сard"
+            />
+          </div>
+          <div class="button-container" class="input-container">
+            <input type="submit" value="Підтвердити"></input>
+          </div>
+        </form>
+        <div class="form-result"></div>
+      </div>
+      <div class="table-task-container">
+        <input type="color" class="table-cell-color-input"></input>
+        <div class="table-container"></div>
+      </div>
+    </div>
+  </body>
+</html>
