@@ -22,11 +22,6 @@ const showInvalidFields = (invalidFields) => {
   }
 };
 
-const removeShowingResult = () => {
-  const formResult = document.querySelector('.form-result');
-  formResult.innerHTML = '';
-};
-
 const showResult = (formDataValues) => {
   const resHtml = `
   <p><b>Введені дані:</b></p>
@@ -72,7 +67,6 @@ const checkFormData = (formData) => {
   }
   clearInvalidFields(Object.keys(formDataValues));
   if (invalidFields.length !== 0) {
-    removeShowingResult();
     showInvalidFields(invalidFields);
     return;
   }
