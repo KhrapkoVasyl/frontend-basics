@@ -28,8 +28,7 @@ const removeShowingResult = () => {
 };
 
 const showResult = (formDataValues) => {
-  const formResult = document.querySelector('.form-result');
-  formResult.innerHTML = `
+  const resHtml = `
   <p><b>Введені дані:</b></p>
     <ul>
       <li>ПІБ: ${formDataValues.fullName}</li>
@@ -38,7 +37,26 @@ const showResult = (formDataValues) => {
       <li>Телефон: ${formDataValues.phone}</li>
       <li>ID-card: ${formDataValues.ID_сard}</li>
     </ul>
+    <button id="button-close">Закрити</button>
   `;
+  const resultWindowWidth = 300;
+  const resultWindowHeight = 250;
+
+  const resultWindow = window.open(
+    '/frontend-basics-5/form-result',
+    '',
+    `width=${resultWindowWidth}px, height=${resultWindowHeight}px`
+  );
+  resultWindow.setTimeout(() => (resultWindow.document.title = 'form-result'));
+  resultWindow.moveBy(
+    window.screen.availWidth / 2 - resultWindowWidth / 2,
+    window.screen.availHeight / 2 - resultWindowHeight / 2
+  );
+  resultWindow.document.write(`<div>${resHtml}<div>`);
+  const buttonClose = resultWindow.document.getElementById('button-close');
+  buttonClose.addEventListener('click', () => {
+    resultWindow.close();
+  });
 };
 
 const validateFormField = (key, value) =>
